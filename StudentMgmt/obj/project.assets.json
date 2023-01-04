@@ -1,11 +1,49 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "Infomax.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Infomax.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Infomax.Models.dll": {}
+        }
+      },
+      "Infomax.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Infomax.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Infomax.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Infomax.Services.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Infomax.Models/1.0.0": {
+      "type": "project",
+      "path": "../Infomax.Models/Infomax.Models.csproj",
+      "msbuildProject": "../Infomax.Models/Infomax.Models.csproj"
+    },
+    "Infomax.Services/1.0.0": {
+      "type": "project",
+      "path": "../Infomax.Services/Infomax.Services.csproj",
+      "msbuildProject": "../Infomax.Services/Infomax.Services.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "Infomax.Models >= 1.0.0",
+      "Infomax.Services >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\G0kul\\.nuget\\packages\\": {}
@@ -33,7 +71,14 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\G0kul\\source\\repos\\StudentMgmt\\Infomax.Models\\Infomax.Models.csproj": {
+              "projectPath": "C:\\Users\\G0kul\\source\\repos\\StudentMgmt\\Infomax.Models\\Infomax.Models.csproj"
+            },
+            "C:\\Users\\G0kul\\source\\repos\\StudentMgmt\\Infomax.Services\\Infomax.Services.csproj": {
+              "projectPath": "C:\\Users\\G0kul\\source\\repos\\StudentMgmt\\Infomax.Services\\Infomax.Services.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

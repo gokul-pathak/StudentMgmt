@@ -1,0 +1,15 @@
+C:\Users\G0kul\source\repos\StudentMgmt\Infomax.Services\bin\Debug\net6.0\Infomax.Services.deps.json
+C:\Users\G0kul\source\repos\StudentMgmt\Infomax.Services\bin\Debug\net6.0\Infomax.Services.dll
+C:\Users\G0kul\source\repos\StudentMgmt\Infomax.Services\bin\Debug\net6.0\Infomax.Services.pdb
+C:\Users\G0kul\source\repos\StudentMgmt\Infomax.Services\bin\Debug\net6.0\Infomax.Models.dll
+C:\Users\G0kul\source\repos\StudentMgmt\Infomax.Services\bin\Debug\net6.0\Infomax.Models.pdb
+C:\Users\G0kul\source\repos\StudentMgmt\Infomax.Services\obj\Debug\net6.0\Infomax.Services.csproj.AssemblyReference.cache
+C:\Users\G0kul\source\repos\StudentMgmt\Infomax.Services\obj\Debug\net6.0\Infomax.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\G0kul\source\repos\StudentMgmt\Infomax.Services\obj\Debug\net6.0\Infomax.Services.AssemblyInfoInputs.cache
+C:\Users\G0kul\source\repos\StudentMgmt\Infomax.Services\obj\Debug\net6.0\Infomax.Services.AssemblyInfo.cs
+C:\Users\G0kul\source\repos\StudentMgmt\Infomax.Services\obj\Debug\net6.0\Infomax.Services.csproj.CoreCompileInputs.cache
+C:\Users\G0kul\source\repos\StudentMgmt\Infomax.Services\obj\Debug\net6.0\Infomax.Services.csproj.CopyComplete
+C:\Users\G0kul\source\repos\StudentMgmt\Infomax.Services\obj\Debug\net6.0\Infomax.Services.dll
+C:\Users\G0kul\source\repos\StudentMgmt\Infomax.Services\obj\Debug\net6.0\refint\Infomax.Services.dll
+C:\Users\G0kul\source\repos\StudentMgmt\Infomax.Services\obj\Debug\net6.0\Infomax.Services.pdb
+C:\Users\G0kul\source\repos\StudentMgmt\Infomax.Services\obj\Debug\net6.0\ref\Infomax.Services.dll
