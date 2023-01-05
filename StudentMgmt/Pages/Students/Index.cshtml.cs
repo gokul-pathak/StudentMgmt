@@ -10,6 +10,7 @@ namespace StudentMgmt.Pages.students
         private readonly IStudentRepository studentRepository;
         public IEnumerable<Student> Students { get; set; }
 
+        //Constructor Dependency Injection
         public IndexModel(IStudentRepository studentRepository)
         {
             this.studentRepository = studentRepository;

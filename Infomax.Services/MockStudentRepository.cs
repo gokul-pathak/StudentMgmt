@@ -25,12 +25,15 @@ namespace Infomax.Services
             /*Student std1 = new Student();
             std1.Name = "Rohan Thapa";
             std1.Email = "rohan@gmail.com";
+            //......
 
             Student std2 = new Student();
             std2.Name = "Rohani Thapa";
 
-            _employeeList.Add(std1);
-            _employeeList.Add(std2);*/
+            _studentList = new List<Student>();
+
+            _studentList.Add(std1);
+            _studentList.Add(std2);*/
         }
         IEnumerable<Student> IStudentRepository.GetAllStudents()
         {
