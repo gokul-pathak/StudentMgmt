@@ -1,0 +1,32 @@
+﻿@page
+@model StudentMgmt.Pages.Students.EditModel
+@{
+
+}
+<form>
+    <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="email" class="form-control" id="name" aria-describedby="emailHelp" value="@Model.Student.Name">
+    </div>
+    <div class="mb-3">
+        <label for="address" class="form-label">Address</label>
+        <input type="password" class="form-control" id="address" value="@Model.Student.Email">
+    </div>
+    <div class="mb-3">
+        <label for="phone" class="form-label">Phone</label>
+        <input type="password" class="form-control" id="phone" value="@Model.Student.Phone">
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="gender" id="male" value="@Model.Student.Gender">
+        <label class="form-check-label" for="male">
+            Male
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="gender" id="female" value="@Model.Student.Gender">
+        <label class="form-check-label" for="female">
+            Female
+        </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

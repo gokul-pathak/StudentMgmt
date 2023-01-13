@@ -39,5 +39,10 @@ namespace Infomax.Services
         {
             return _studentList;
         }
+
+        public Student GetStudent(int id)
+        {
+            return _studentList.FirstOrDefault(student => student.Id == id);
+        }
     }
 }
