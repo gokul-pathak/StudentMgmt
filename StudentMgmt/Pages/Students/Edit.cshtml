@@ -1,4 +1,4 @@
-﻿@page
+﻿@page "/students/jpt/{id:int}"
 @model StudentMgmt.Pages.Students.EditModel
 @{
 
@@ -6,15 +6,15 @@
 <form>
     <div class="mb-3">
         <label for="name" class="form-label">Name</label>
-        <input type="email" class="form-control" id="name" aria-describedby="emailHelp" value="@Model.Student.Name">
+        <input type="text" class="form-control" id="name" aria-describedby="emailHelp" value="@Model.Student.Name">
     </div>
     <div class="mb-3">
-        <label for="address" class="form-label">Address</label>
-        <input type="password" class="form-control" id="address" value="@Model.Student.Email">
+        <label for="address" class="form-label">Email</label>
+        <input type="email" class="form-control" id="address" value="@Model.Student.Email">
     </div>
     <div class="mb-3">
         <label for="phone" class="form-label">Phone</label>
-        <input type="password" class="form-control" id="phone" value="@Model.Student.Phone">
+        <input type="text" class="form-control" id="phone" value="@Model.Student.Phone">
     </div>
     <div class="form-check">
         <input class="form-check-input" type="radio" name="gender" id="male" value="@Model.Student.Gender">
