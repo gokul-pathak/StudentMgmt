@@ -1,32 +1,27 @@
-﻿@page "/students/jpt/{id:int}"
+﻿@page "{id:int}"
 @model StudentMgmt.Pages.Students.EditModel
 @{
 
 }
-<form>
+<form method="POST">
+
+    <input type="hidden" asp-for="Student.Id" />
     <div class="mb-3">
-        <label for="name" class="form-label">Name</label>
-        <input type="text" class="form-control" id="name" aria-describedby="emailHelp" value="@Model.Student.Name">
+        <label asp-for="Student.Name" class="form-label">Name</label>
+        <input type="text" class="form-control" asp-for="Student.Name">
     </div>
     <div class="mb-3">
-        <label for="address" class="form-label">Email</label>
-        <input type="email" class="form-control" id="address" value="@Model.Student.Email">
+        <label asp-for="Student.Email" class="form-label">Email</label>
+        <input type="email" class="form-control" asp-for="Student.Email">
     </div>
     <div class="mb-3">
-        <label for="phone" class="form-label">Phone</label>
-        <input type="text" class="form-control" id="phone" value="@Model.Student.Phone">
+        <label asp-for="Student.Phone" class="form-label">Phone</label>
+        <input type="text" class="form-control" asp-for="Student.Phone">
     </div>
-    <div class="form-check">
-        <input class="form-check-input" type="radio" name="gender" id="male" value="@Model.Student.Gender">
+@*    <div class="form-check">
+        <input class="form-check-input" type="radio" name="gender" asp-for="Student.Gender">
         <label class="form-check-label" for="male">
-            Male
         </label>
-    </div>
-    <div class="form-check">
-        <input class="form-check-input" type="radio" name="gender" id="female" value="@Model.Student.Gender">
-        <label class="form-check-label" for="female">
-            Female
-        </label>
-    </div>
+    </div>*@
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>
