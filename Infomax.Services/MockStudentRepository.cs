@@ -16,9 +16,9 @@ namespace Infomax.Services
             _studentList = new List<Student>()
             {
                 new Student() { Id = 1, Name = "Rohan Thapa", Email = "rohan@gmail.com", Gender = Gender.Male, Phone
-                = "9856012345"},
+                = "9856012345", PhotoPath ="person1.jpg"},
                  new Student() { Id = 2, Name = "Rohani Thapa", Email = "rohani@gmail.com", Gender = Gender.Female, Phone
-                = "9856012445"}
+                = "9856012445", PhotoPath="person2.jpg"}
 
             };
 
@@ -53,6 +53,7 @@ namespace Infomax.Services
                 std.Email = student.Email;
                 std.Gender = student.Gender;
                 std.Phone = student.Phone;
+                std.PhotoPath = student.PhotoPath;
             }
             return std;
         }
