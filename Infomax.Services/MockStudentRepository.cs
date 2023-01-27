@@ -57,6 +57,21 @@ namespace Infomax.Services
             }
             return std;
         }
+        public Student Delete(int id)
+        {
+            var studentToDelete = this.GetStudent(id);
+            if(studentToDelete != null)
+            {
+                _studentList.Remove(studentToDelete);
+            }
+            return studentToDelete;
+        }
+        public Student Add(Student student)
+        {
+            student.Id = _studentList.Max(student => student.Id) + 1;
+            _studentList.Add(student);
+            return student;
+        }
     }
 
 }

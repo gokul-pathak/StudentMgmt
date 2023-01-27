@@ -27,14 +27,29 @@ namespace StudentMgmt.Pages.Students
             _studentRepository = studentRepository;
             this.webHostEnvironment = webHostEnvironment;
         }
-        public void OnGet(int id)
+        public IActionResult OnGet(int? id)
         {
-            Student = _studentRepository.GetStudent(id);
+            if(id.HasValue)
+            {
+                Student = _studentRepository.GetStudent(id.Value);
+            }
+            else
+            {
+                Student = new Student();
+                Student.PhotoPath = "none";
+            }
+            if(Student == null)
+            {
+                return RedirectToPage("/404");
+            }
+            return Page();
+            Student = _studentRepository.GetStudent(id.Value);
         }
         public IActionResult OnPost(Student Student)
         {
             if (ModelState.IsValid)
             {
+
                 if (Photo != null)
                 {
                     // If a new photo is uploaded, the existing photo must be
@@ -48,6 +63,20 @@ namespace StudentMgmt.Pages.Students
                     // Save the new photo in wwwroot/images folder and update
                     // PhotoPath property of the Student object
                     Student.PhotoPath = ProcessUploadedFile();
+                }
+                if (Student.Id > 0)
+                {
+                    Student = _studentRepository.Update(Student);
+
+                }
+                else
+                {
+                    if (Student.PhotoPath == "none")
+                    {
+                        ModelState.AddModelError(string.Empty, "Please select your thopda");
+                        return Page();
+                    }
+                    Student = _studentRepository.Add(Student);
                 }
                 Student = _studentRepository.Update(Student);
                 return RedirectToPage("Index");

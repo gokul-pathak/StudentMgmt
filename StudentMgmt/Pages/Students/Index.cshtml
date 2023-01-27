@@ -1,11 +1,23 @@
-﻿@page
+﻿@page "{id:min(1)?}"
 @model StudentMgmt.Pages.students.IndexModel
 @{
     var title = "list of students";
     ViewData["Title"]="-Students";
+    bool isDelete = (Model.DeleteId > 0);
 }
 
+@if (isDelete)
+{
+<div class="alert alert-danger">
+  Do you want to Delete @Model.ToDeleteStudent.Name's record?<br>
+  <form method="post">
+    <button type="submit" class="btn btn-danger">Yes</button>
+    <a href="/Students/Index" class="btn btn-primary">No</a>
+  </form>
+</div>
+}
 <h1>@title</h1>
+
 @if (!string.IsNullOrEmpty(Model.Message))
 {
     <div class="alert alert-primary">
@@ -42,10 +54,10 @@
                 </td>
                 <td>
                     <a class="btn btn-success" asp-page="/Students/Edit" asp-route-id="@student.Id">Edit</a>
-                    <a class="btn btn-danger">Delete</a>
+                    <a class="btn btn-danger" href="/Students/Index/@student.Id">Delete</a>
                 </td>
             </tr>
         }
         
     </tbody>
-</table>
+</table>                            

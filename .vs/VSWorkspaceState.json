@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\StudentMgmt",
+    "\\StudentMgmt\\Pages",
+    "\\StudentMgmt\\Pages\\Students"
   ],
-  "SelectedNode": "\\StudentMgmt.sln",
+  "SelectedNode": "\\StudentMgmt\\Pages\\Students\\Edit.cshtml.cs",
   "PreviewInSolutionExplorer": false
 }
